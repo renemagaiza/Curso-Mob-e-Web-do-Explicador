@@ -23,6 +23,9 @@
             background-image: url("fundo-madeira.jpg");
             background-size: cover;
         }
+
+
+
         section{
             position: absolute;
             top: 50%;
@@ -79,10 +82,17 @@
             </article>
         </section>
     </main>
+    <script src="confetti.js"></script>
     <script>
+        function start (){
+            setTimeout(function(){
+                confetti.start();
+            });
+        }
         function clickMenu (){
             sms.style.display = "block";
             tela.style.display = "none"
+            start();
         }
     </script>
 </body>
