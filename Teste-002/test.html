@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" integrity="sha512-WBbdKQKeIQFarq1hrOxNL/gnp0Tqh25fn0z3X1po+ej8iuHhHdp6Sh9l+tghGw5L1bsvtzjeuSKsL80RW3XdYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function test ()
+        {
+            $.ajax({url:"sms.php", success:function(result)
+            {
+                alert(result)
+            }
+            })   
+        }
+    </script>
+    
+</head>
+<body>
+    <? echo $HTTP_USER_AGENT; ?>
+   <button onclick="test()">click</button> 
+   <article id="tela">
+
+   </article>
+</body> 
+</html>
